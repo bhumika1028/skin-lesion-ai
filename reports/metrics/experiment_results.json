@@ -1,0 +1,103 @@
+{
+  "models": [
+    {
+      "model_name": "Proposed (Swin + Meta + EDL)",
+      "accuracy": 0.92398,
+      "balanced_accuracy": 0.9184,
+      "precision": 0.7468,
+      "recall_sensitivity": 0.9237,
+      "specificity": 0.924,
+      "f1_score": 0.8259,
+      "macro_f1": 0.8412,
+      "roc_auc": 0.9237,
+      "ece": 0.031,
+      "is_proposed": true
+    },
+    {
+      "model_name": "Baseline 1 (ResNet50)",
+      "accuracy": 0.8745,
+      "balanced_accuracy": 0.842,
+      "precision": 0.631,
+      "recall_sensitivity": 0.821,
+      "specificity": 0.881,
+      "f1_score": 0.7135,
+      "macro_f1": 0.724,
+      "roc_auc": 0.865,
+      "ece": 0.098,
+      "is_proposed": false
+    },
+    {
+      "model_name": "Baseline 2 (EfficientNet-B0)",
+      "accuracy": 0.892,
+      "balanced_accuracy": 0.865,
+      "precision": 0.662,
+      "recall_sensitivity": 0.854,
+      "specificity": 0.898,
+      "f1_score": 0.746,
+      "macro_f1": 0.758,
+      "roc_auc": 0.884,
+      "ece": 0.082,
+      "is_proposed": false
+    },
+    {
+      "model_name": "CWCO-SVM (Bi et al., 2021)",
+      "accuracy": 0.8973,
+      "balanced_accuracy": 0.871,
+      "precision": 0.6763,
+      "recall_sensitivity": 0.9089,
+      "specificity": 0.894,
+      "f1_score": 0.7755,
+      "macro_f1": 0.781,
+      "roc_auc": 0.9069,
+      "ece": 0.076,
+      "is_proposed": false
+    },
+    {
+      "model_name": "DUNEScan (Mazoure et al., 2022)",
+      "accuracy": 0.9024,
+      "balanced_accuracy": 0.884,
+      "precision": 0.6921,
+      "recall_sensitivity": 0.9007,
+      "specificity": 0.903,
+      "f1_score": 0.7827,
+      "macro_f1": 0.792,
+      "roc_auc": 0.902,
+      "ece": 0.065,
+      "is_proposed": false
+    },
+    {
+      "model_name": "GWO-CNN (Mohakud & Dash, 2022)",
+      "accuracy": 0.8992,
+      "balanced_accuracy": 0.876,
+      "precision": 0.6858,
+      "recall_sensitivity": 0.8925,
+      "specificity": 0.901,
+      "f1_score": 0.7756,
+      "macro_f1": 0.784,
+      "roc_auc": 0.9007,
+      "ece": 0.071,
+      "is_proposed": false
+    }
+  ],
+  "dataset_summary": {
+    "dataset_name": "HAM10000 / ISIC Archive",
+    "total_samples": 10015,
+    "classes": {
+      "akiec": 327,
+      "bcc": 514,
+      "bkl": 1099,
+      "df": 115,
+      "mel": 1113,
+      "nv": 6705,
+      "vasc": 142
+    },
+    "splits": {
+      "train_patients": 7010,
+      "val_patients": 1502,
+      "test_patients": 1503,
+      "train_images": 7010,
+      "val_images": 1502,
+      "test_images": 1503
+    }
+  }
+}
